@@ -1,0 +1,13 @@
+version: 1.0
+name: MyPlugin
+main: com.shaun.plugin.Main
+author: Hysterical_Misfit
+description: My personalized Plugin
+commands:
+  hello:
+  heal:
+  tp:
+  tpaccept:
+  tpdeny:
+  spawn:
+  setspawn:
