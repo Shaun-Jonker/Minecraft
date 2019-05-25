@@ -11,3 +11,5 @@ commands:
   tpdeny:
   spawn:
   setspawn:
+  sethome:
+  home:

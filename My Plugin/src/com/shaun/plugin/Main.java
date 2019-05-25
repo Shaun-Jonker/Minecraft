@@ -36,33 +36,21 @@ public class Main extends JavaPlugin implements Listener{
 		
 		Bukkit.getPluginManager().registerEvents(this, this);
 		
-
 //		Commands Start here.
 		
 		getCommand("hello").setExecutor(new Hello());
-		getCommand("heal").setExecutor(new HealCommand());
-//		getCommand("tp").setExecutor(new Teleport());
-//		getCommand("tpaccept").setExecutor(new Teleport());
-//		getCommand("tpdeny").setExecutor(new Teleport());
-
-//		getCommand("sethome").setExecutor(new Sethome());
-//		getCommand("home").setExecutor(new HomeTp());
-		
-				
+		getCommand("sethome").setExecutor(new SetHomeCommand());
+        getCommand("home").setExecutor(new HomeCommand());
+						
 		}
 		
-	
-	
 	@Override
 	public void onDisable() {
 		
 //		getCommand("stop").setExecutor(new Stop());
-
-		
 		System.out.println("YEAH SURGE! THE PLUGIN IS DISABLED!");
 				
 	}
-	
 	
 //		Welcome message to players
 	
@@ -79,7 +67,6 @@ public class Main extends JavaPlugin implements Listener{
 		p.sendMessage(ChatColor.DARK_RED + "You died, Unlucky!");
 		
 	}
-	
 	
 //	These are the setspawn and spawn commands.
 	
@@ -146,15 +133,5 @@ public class Main extends JavaPlugin implements Listener{
 	}
 	
 	return true;
+	}
 }
-}
-
-
-	
-
-//	private HashMap<Player, Player> tpa = new HashMap<Player, Player>();
-//
-//	public HashMap<Player,Player> getTpa(){
-//			return tpa;
-		
-
